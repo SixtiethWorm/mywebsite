@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SixtiethWorm</title>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to My Website</h1>
-        </header>
-        <nav>
-            <a href="#section1">Section 1</a> |
-            <a href="#section2">Section 2</a>
-        </nav>
-        <main>
-            <section id="section1">
-                <h2>Section 1</h2>
-                <p>This is the first section of your website.</p>
-            </section>
-            <section id="section2">
-                <h2>Section 2</h2>
-                <p>This is the second section of your website.</p>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright © 2024 Edoardo De Celis</p>
-        </footer>
-    </body>
+<head>
+    <title>Your Vlog Page</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Vlog Page</h1>
+    </header>
+    <main>
+        <section id="vlog-list">
+            <!-- Vlogs will be dynamically added here -->
+        </section>
+        <section id="vlog-editor" style="display: none;">
+            <form id="vlog-form">
+                <label for="vlog-title">Title:</label><br>
+                <input type="text" id="vlog-title" name="vlog-title"><br>
+                <label for="vlog-content">Content:</label><br>
+                <textarea id="vlog-content" name="vlog-content"></textarea><br>
+                <label for="vlog-video">YouTube Video Link:</label><br>
+                <input type="text" id="vlog-video" name="vlog-video"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Edoardo De Celis</p>
+    </footer>
+
+    <script>
+        // Add your JavaScript here
+        // You can use this to show/hide the editor based on user authentication
+        // And to dynamically add vlogs to the 'vlog-list' section
+    </script>
+</body>
 </html>
