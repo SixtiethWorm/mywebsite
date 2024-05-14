@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <title>My Vlog Page</title>
+    
+    <style>
+        body {
+            background-color: #11100f;
+            font-family: 'Bahnschrift', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            }
+
+        img {
+            width: 20%; /* You can adjust this value to scale the image */
+            height: auto; /* This will maintain the aspect ratio of the image */
+            }
+        
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: background-color 0.5s ease;
+            }
+
+        a.button:hover {
+            background-color: #0056b3;
+            }
+
+        a.button svg {
+            margin-right: 10px;
+            vertical-align: middle;
+            }
+
+        /* Add CSS styles here */
+    </style>
+    
+</head>
+    
+<body>
+    <img src="https://raw.githubusercontent.com/SixtiethWorm/mywebsite/main/gargantua_black_hole.jpg" alt="Gargantua Black Hole">
+    <header>
+        <h1>Welcome to My Vlog Page!</h1>
+    </header>
+    
+    <main>
+        
+        <section id="vlog-list">
+            
+            <a href="Band_Eins.html" class="button">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="none" class="bi bi-play-fill" viewBox="0 0 24 24">
+                    <path d="M6.8008 11.7834L8.07502 11.9256C9.09772 12.0398 9.90506 12.8507 10.0187 13.8779C10.1062 14.6689 10.6104 15.3515 11.3387 15.665L13 16.3547M13 16.3547L9.48838 19.8818C8.00407 21.3727 5.59754 21.3727 4.11323 19.8818C2.62892 18.391 2.62892 15.9738 4.11323 14.4829L14.8635 3.68504L20.2387 9.08398L18.429 10.9017M13 16.3547L16 13.3414M21 9.84867L14.1815 3" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+
+                Vlog Test 1
+            </a>
+            
+        </section>
+        
+        <section id="vlog-editor" style="display: none;">
+            
+            <form id="vlog-form">
+                <label for="vlog-title">Title:</label><br>
+                <input type="text" id="vlog-title" name="vlog-title"><br>
+                <label for="vlog-content">Content:</label><br>
+                <textarea id="vlog-content" name="vlog-content"></textarea><br>
+                <label for="vlog-video">YouTube Video Link:</label><br>
+                <input type="text" id="vlog-video" name="vlog-video"><br>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>© 2024 Edoardo De Celis</p>
+    </footer>
+
+    <script>
+        // Add your JavaScript here
+        // You can use this to show/hide the editor based on user authentication
+        // And to dynamically add vlogs to the 'vlog-list' section
+    </script>
+    
+</body>
+    
+</html>
